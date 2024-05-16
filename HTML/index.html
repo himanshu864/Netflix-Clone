@@ -49,11 +49,14 @@
                 <div class="member-text">
                     Ready to watch? Enter your email to create or restart your membership.
                 </div>
-                <!-- Not bothering making this cool transition using complex overlapping css -->
                 <div class="member-form">
-                    <label for="email-address1" class="email-box">
-                        <input type="text" placeholder="Email Address" id="email-address1">
-                    </label>
+                    <div class="email-box">
+                        <div class="email-holder" id="eh1">Email Address</div>
+                        <label for="email-address1" class="email-label">
+                            <input type="text" id="email-address1">
+                        </label>
+                        <div class="email-error" id="emailError1"></div>
+                    </div>
                     <button type="button" class="sign-in started">Get Started <svg xmlns="http://www.w3.org/2000/svg"
                             fill="none" width="24" height="24" viewBox="0 0 24 24" role="img" aria-hidden="true">
                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -301,9 +304,13 @@
                     Ready to watch? Enter your email to create or restart your membership.
                 </div>
                 <div class="member-form">
-                    <label for="email-address2" class="email-box">
-                        <input type="text" placeholder="Email Address" id="email-address2">
-                    </label>
+                    <div class="email-box">
+                        <div class="email-holder" id="eh2">Email Address</div>
+                        <label for="email-address2" class="email-label">
+                            <input type="text" id="email-address2">
+                        </label>
+                        <div class="email-error" id="emailError2"></div>
+                    </div>
                     <button type="button" class="sign-in started">Get Started <svg xmlns="http://www.w3.org/2000/svg"
                             fill="none" width="24" height="24" viewBox="0 0 24 24" role="img" aria-hidden="true">
                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -347,7 +354,6 @@
             <div class="anyquestion">Netflix India</div>
         </section>
     </footer>
-
     <script src="/JS/script.js"></script>
 </body>
 
