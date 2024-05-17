@@ -352,9 +352,14 @@ html {
 
 .hidden-text {
     margin-top: 1px;
-    font-size: 22px;
+    font-size: 24px;
     padding: 20px;
     background-color: rgb(45, 45, 45);
+    transition: 1s linear;
+}
+
+.invisible {
+    display: none;
 }
 
 .t1 {
