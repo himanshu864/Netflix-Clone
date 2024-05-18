@@ -91,8 +91,12 @@ emailInputs.forEach(({ input, box, error }) => {
     input.addEventListener("focusout", () => handleFocusOut(input, box, error));
 });
 
-// Temperary Collapse using onclick target toggle display none
 // Toggle onclick FAQs
-function toggleInvi(e) {
-    e.target.parentElement.querySelector(".hidden-text").classList.toggle("invisible");
-}
+document.querySelectorAll(".query").forEach(element => element.addEventListener("click", e => {
+    if (!e.currentTarget.querySelector(".qross").classList.contains("rotate-q")) {
+        document.querySelectorAll(".hidden-text").forEach(q => q.classList.remove("invisible"));
+        document.querySelectorAll(".qross").forEach(q => q.classList.remove("rotate-q"));
+    }
+    e.currentTarget.parentElement.querySelector(".hidden-text").classList.toggle("invisible");
+    e.currentTarget.querySelector(".qross").classList.toggle("rotate-q");
+}));
